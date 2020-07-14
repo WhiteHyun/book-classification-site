@@ -10,3 +10,18 @@ document.addEventListener("scroll", () => {
     navbar.classList.remove("navbar--dark");
   }
 });
+
+//Handle scrolling when tapping on the navbar menu
+const navbarMenu = document.querySelector(".navbar__menu");
+navbarMenu.addEventListener("click", (event) => {
+  const target = event.target;
+  const link = target.dataset.link;
+  if (link == null) {
+    return;
+  }
+  const navbarHeight = navbar.getBoundingClientRect().height;
+  const scrollTo = document.querySelector(link);
+  const scrollY = scrollTo.offsetTop - navbarHeight;
+  window.scrollTo({ top: scrollY, behavior: "smooth" });
+  // scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
+});
