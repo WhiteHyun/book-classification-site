@@ -372,6 +372,14 @@ p {
     display: block;
   }
 
+  .home__text {
+    width: 200px;
+    font-size: var(--font-small);
+    font-weight: var(--font-small);
+    display: inline;
+    margin: auto;
+  }
+
   .section {
     padding: 16px;
   }
@@ -411,7 +419,7 @@ p {
     height: 50px;
     font-size: 30px;
     line-height: 50px;
-    bottom: 16px;
-    right: 16px;
+    bottom: 32px;
+    right: 32px;
   }
 }
