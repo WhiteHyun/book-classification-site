@@ -30,24 +30,24 @@ navbarToggleBtn.addEventListener("click", () => {
 });
 
 // Handle click on "contact me" button on home
-const homeContactBtn = document.querySelector(".home__contact");
-homeContactBtn.addEventListener("click", (event) => {
-  scrollIntoView("#contact");
-});
+// const homeContactBtn = document.querySelector(".home__button");
+// homeContactBtn.addEventListener("click", (event) => {
+//   scrollIntoView("#contact");
+// });
 
 // Make home slowly fade to transparent as the window scrolls down
 const homeContainer = document.querySelector(".home__container");
 const homeHeight = homeContainer.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
-  homeContactBtn.style.opacity = 1 - window.scrollY / homeHeight;
+  // homeContactBtn.style.opacity = 1 - window.scrollY / homeHeight;
 });
-homeContactBtn.addEventListener("mouseenter", () => {
-  homeContactBtn.style.opacity = 1;
-});
-homeContactBtn.addEventListener("mouseleave", () => {
-  homeContactBtn.style.opacity = 1 - window.scrollY / homeHeight;
-});
+// homeContactBtn.addEventListener("mouseenter", () => {
+//   homeContactBtn.style.opacity = 1;
+// });
+// homeContactBtn.addEventListener("mouseleave", () => {
+//   homeContactBtn.style.opacity = 1 - window.scrollY / homeHeight;
+// });
 
 // Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector(".arrow-up");
