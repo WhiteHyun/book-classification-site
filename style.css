@@ -422,4 +422,8 @@ p {
     bottom: 32px;
     right: 32px;
   }
+
+  .fa-chevron-up {
+    text-align: center;
+  }
 }
