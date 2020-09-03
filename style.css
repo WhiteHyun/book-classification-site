@@ -203,6 +203,29 @@ p {
   margin: auto;
 }
 
+/* Books */
+
+#books {
+  background-color: var(--color-white);
+  display: none;
+}
+
+.books__position {
+  background-color: var(--color-light-white);
+  display: flex;
+}
+
+.books__img {
+  max-width: 100%;
+  height: auto;
+  /* text-align: left; */
+}
+
+.books__description {
+  font-size: var(--font-mideum);
+  transform: translate(5%, 30%);
+}
+
 /* Skills */
 
 .skill__majors {
